@@ -10,7 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+            .onLongPressGesture(minimumDuration: 4) {
+                print("Long press for 4 seconds")
+            }
     }
 }
 
